@@ -11,10 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150311211928) do
+ActiveRecord::Schema.define(version: 20150311222024) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "course_tags", force: :cascade do |t|
+  end
 
   create_table "courses", force: :cascade do |t|
     t.string   "name"
@@ -31,6 +34,9 @@ ActiveRecord::Schema.define(version: 20150311211928) do
     t.datetime "updated_at",  null: false
   end
 
+  create_table "curriculum_course", force: :cascade do |t|
+  end
+
   create_table "curriculums", force: :cascade do |t|
     t.string   "curriculum_name"
     t.string   "description"
@@ -42,11 +48,20 @@ ActiveRecord::Schema.define(version: 20150311211928) do
     t.datetime "updated_at",       null: false
   end
 
+  create_table "playlist_course", force: :cascade do |t|
+  end
+
   create_table "playlists", force: :cascade do |t|
     t.string   "playlist_name"
     t.string   "description"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+  end
+
+  create_table "user_curriculum", force: :cascade do |t|
+  end
+
+  create_table "user_playlist", force: :cascade do |t|
   end
 
   create_table "users", force: :cascade do |t|

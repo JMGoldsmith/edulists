@@ -33,6 +33,8 @@ gem 'formtastic', '~> 3.0'
 gem 'simple-navigation', '~> 3.14.0'
 gem 'event-calendar', :require => 'event_calendar'
 gem 'websocket', '~> 1.2.1'
+gem 'forem'
+gem 'kaminari'
 
 
 # Use ActiveModel has_secure_password

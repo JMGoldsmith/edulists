@@ -35,6 +35,7 @@ gem 'event-calendar', :require => 'event_calendar'
 gem 'websocket', '~> 1.2.1'
 gem 'forem'
 gem 'kaminari'
+gem 'react-rails', '~> 1.0'
 
 
 # Use ActiveModel has_secure_password
